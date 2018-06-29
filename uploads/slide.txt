@@ -1,0 +1,61 @@
+	<script>
+		.mySlides{display:none;}
+	</script>
+
+</head>
+
+
+<body bgcolor="#eee" >
+
+<div class="wrapper">
+	<div class="top-bar clearfix">
+		<div class="top-bar-links">
+			 <ul>
+			 	<li><a href="register.php"><strong>SignUp</strong></a></li>
+			 	<li><a href="login2.php"><strong>Login</strong></a></li>
+			 </ul>
+		</div>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Lectures</a></li>
+				<!--<div
+					<ul>
+						<li><a href="">School Of Computing </a></li>
+						<li><a href="">School Of Business </a></li>
+						<li><a href="">School Of Engineering </a></li>
+					</ul>
+				</div> -->
+<script>
+		.mySlides{display:none;}
+	</script>		
+
+
+
+
+<div class="homeslidebar" style="max-width: auto" >
+			<img class="mySlides" src="img/slide1.jpg" height="450px"  width="1000px" >
+			<img class="mySlides" src="img/slide2.jpg" height="450px"  width="1000px" >
+			<img class="mySlides" src="img/slide3.jpg" height="450px"  width="1000px" >
+		</div>
+
+		<!--Slide Bar in Home Page-->
+		<script>
+		var mySlide1 = 0;
+		changeslide();
+		
+			function changeslide() {
+   			 var i;
+    		 var x = document.getElementsByClassName("mySlides");
+   				 for (i = 0; i < x.length; i++) {
+      				 x[i].style.display = "none";  
+    			}
+
+    		mySlide1++;
+    			if (mySlide1 > x.length) {mySlide1 = 1}    
+    			x[mySlide1-1].style.display = "block";  
+    			setTimeout(changeslide, 3000); 
+			}
+		</script>
